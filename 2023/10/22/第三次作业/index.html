@@ -6,13 +6,21 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="第三次作业1.向一棵空的二叉搜索树中顺序插入关键字a l g o r i t h m，画出得到的二叉搜索树。字符之间的大小依照其对应的ASCII码来确定。  2.对有序表进行折半查找形成的折半查找树和一般的二叉搜索树有何异同之处？相同： 1.查找效率：对于平衡的二叉树，查找操作的平均时间复杂度为 O(log n)。 2.有序性：无论是折半查找还是在BST中，数据都必须以某种方式有序（在BST中，任">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2023/10/22/%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="第三次作业1.向一棵空的二叉搜索树中顺序插入关键字a l g o r i t h m，画出得到的二叉搜索树。字符之间的大小依照其对应的ASCII码来确定。  2.对有序表进行折半查找形成的折半查找树和一般的二叉搜索树有何异同之处？相同： 1.查找效率：对于平衡的二叉树，查找操作的平均时间复杂度为 O(log n)。 2.有序性：无论是折半查找还是在BST中，数据都必须以某种方式有序（在BST中，任">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="file:///C:/Users/%E8%B0%A2/AppData/Local/Temp/ksohtml9780/wps1.jpg">
+<meta property="og:image" content="file:///C:/Users/%E8%B0%A2/AppData/Local/Temp/ksohtml9780/wps2.jpg">
+<meta property="og:image" content="file:///C:/Users/%E8%B0%A2/AppData/Local/Temp/ksohtml9780/wps3.jpg">
+<meta property="article:published_time" content="2023-10-22T11:51:32.245Z">
+<meta property="article:modified_time" content="2023-10-23T15:41:14.179Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="file:///C:/Users/%E8%B0%A2/AppData/Local/Temp/ksohtml9780/wps1.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -71,63 +79,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-c++中的一些 (copy)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/10/24/c++%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%20(copy)/" class="article-date">
-  <time class="dt-published" datetime="2023-10-24T09:18:26.786Z" itemprop="datePublished">2023-10-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h4 id="基于范围的for循环"><a href="#基于范围的for循环" class="headerlink" title="基于范围的for循环"></a>基于范围的for循环</h4><p>for循环后的括号由冒号“ ：”分为两部分：第一部分是范围内用于迭代的变量，第二部分则表示被迭代的范围。</p>
-<p>看范围 for 语句的定义：</p>
-<p>for (declaration : expression)</p>
-<p>其中，expression部分是个序列，declaration部分负责定义一个变量，该变量将被用于访问序列中的基础元素。</p>
-<p>(const auto pair : count) &#x2F;&#x2F;const:不改变遍历数组的值、</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">TestFor2</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="type">int</span> array[] = &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span> &#125;;</span><br><span class="line"><span class="comment">//定义一个变量 e 然后每次都从array取数据赋值给e，自动判断结束</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> e : array)</span><br><span class="line">cout &lt;&lt; e &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">TestFor2</span>();</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">输出结果：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="vector的介绍"><a href="#vector的介绍" class="headerlink" title="vector的介绍"></a><strong>vector的介绍</strong></h4><p>vector是STL(标准模板库)中最常见的容器，它是一种顺序容器，支持随机访问。可以用sort对其进行排序，底层数据结构是数组，可以随机访问元素。</p>
-<p>vector是一块连续分配的内存，从数据安排的角度来讲，和数组极其相似，不同的地方就是：数组是静态分配空间，一旦分配了空间的大小，就不可再改变了；而vector是动态分配空间，随着元素的不断插入，它会按照自身的一套机制不断扩充自身的容量。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span> </span></span><br><span class="line"></span><br><span class="line">\<span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123; vector&lt;<span class="type">int</span>&gt; sdt;<span class="comment">//无参构造</span></span><br><span class="line"></span><br><span class="line"> <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">s1</span><span class="params">(<span class="number">4</span>,<span class="number">100</span>)</span></span>;<span class="comment">//构造并初始化4个100 </span></span><br><span class="line"></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">s2</span><span class="params">(s1.begin(), s1.end())</span></span>;<span class="comment">//使用迭代器进行初始化构造 </span></span><br><span class="line"></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">s3</span><span class="params">(s1)</span></span>;<span class="comment">//拷贝构造 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="sort函数：对给定区间所有元素进行排序"><a href="#sort函数：对给定区间所有元素进行排序" class="headerlink" title="sort函数：对给定区间所有元素进行排序"></a>sort函数：对给定区间所有元素进行排序</h4><p><img src="https://static.flomoapp.com/file/2023-10-10/1297562/b19bc830cc7bd166726ed43279de831c.png?OSSAccessKeyId=LTAI4G9PcaGksWVKCPrE1TVL&Expires=1698235146&Signature=IMBPNU8RoQgqqjCHDW6UekmxYQo=" alt="b19bc830cc7bd166726ed43279de831c.png"></p>
-<h4 id="万能头文件：-include"><a href="#万能头文件：-include" class="headerlink" title="万能头文件：#include&lt;bits&#x2F;stdc++.h&gt;"></a>万能头文件：#include&lt;bits&#x2F;stdc++.h&gt;</h4><p>相当于以下头文件总和：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">\<span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;fstream&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cmath&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;deque&gt;</span></span></span><br><span class="line"></span><br><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span> </span></span><br><span class="line"></span><br><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span> </span></span><br><span class="line"></span><br><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"></span><br><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;map&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stack&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cctype&gt;</span></span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="在运行时退出程序：exit-0"><a href="#在运行时退出程序：exit-0" class="headerlink" title="在运行时退出程序：exit(0)"></a>在运行时退出程序：exit(0)</h4><h4 id="：：-作用域运算符"><a href="#：：-作用域运算符" class="headerlink" title="：： 作用域运算符"></a>：： 作用域运算符</h4><p>全局作用域符号：当全局变量在局部函数中与其中某个变量重名，那么就可以用::来区分如： 
-　　</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> zhou; <span class="comment">//全局变量 </span></span><br><span class="line">　　<span class="type">void</span> sleep（） </span><br><span class="line">　　&#123; </span><br><span class="line">　　<span class="type">char</span> zhou; <span class="comment">//局部变量 </span></span><br><span class="line">　　<span class="built_in">zhou</span>(局部变量) = <span class="built_in">zhou</span>(局部变量) *<span class="built_in">zhou</span>(局部变量) ; </span><br><span class="line">　　::<span class="built_in">zhou</span>(全局变量) =::<span class="built_in">zhou</span>(全局变量) *<span class="built_in">zhou</span>(局部变量); </span><br><span class="line">　　&#125;</span><br><span class="line"></span><br><span class="line">类作用</span><br></pre></td></tr></table></figure>
-
-<p>作用域符号::的前面一般是类名称，后面一般是该类的成员名称，C++为了避免不同的类有名称相同的成员而采用作用域的方式进行区分<br>　　如：A,B表示两个类，在A,B中都有成员member。那么<br>　　A::member就表示类A中的成员member<br>　　B::member就表示类B中的成员member</p>
-<p>3命名空间</p>
-<p>“::”是作用域<a target="_blank" rel="noopener" href="http://baike.baidu.com/view/6987276.htm">限定符</a>或者称作用域运算符或者作用域操作符（scope operator）.例如命名空间</p>
-<p>“::”作用：namespace::name</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 国内用户如果速度较慢，可以把github地址替换为：https://gitee.com/mirrors/ayer.git</span><br><span class="line">git clone https://https://gitee.com/mirrors/ayer.git themes/ayer</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/10/24/c++%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%20(copy)/" data-id="clo45oypx00007ov22p8r0q5e" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-第三次作业" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-第三次作业" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/10/22/%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A/" class="article-date">
   <time class="dt-published" datetime="2023-10-22T11:51:32.245Z" itemprop="datePublished">2023-10-22</time>
@@ -236,11 +188,23 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
+  
+    <a href="/2023/10/24/c++%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%20(copy)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
+</article>
 
 
 </section>
