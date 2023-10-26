@@ -51,11 +51,11 @@
   display: none;
 }
 :root {
-  --color-site-body: #c8e6c9;
-  --color-site-bg: #c8e6c9;
+  --color-site-body: #ffd54f;
+  --color-site-bg: #ffd54f;
   --color-site-inner: #fff;
   --color-site-footer: #666;
-  --color-card: #e8f5e9;
+  --color-card: #fff9c4;
   --color-text: #444;
   --color-block: #f6f6f6;
   --color-inlinecode: #c74f00;
@@ -68,7 +68,7 @@
   --color-h6: #666;
   --color-p: #444;
   --color-list: #666;
-  --color-list-hl: #a0b8a0;
+  --color-list-hl: #ccaa3f;
   --color-meta: #888;
   --color-read-bkg: #e0d8c8;
   --color-read-post: #f8f1e2;
@@ -90,13 +90,13 @@
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background: #c8e6c9;
+  background: #ffd54f;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
 }
 *::-webkit-scrollbar-thumb:hover {
-  background: #69f0ae;
+  background: #8bc34a;
 }
 html {
   color: var(--color-text);
@@ -153,7 +153,7 @@ a {
   -ms-transition: all 0.28s ease;
 }
 a:hover {
-  color: #69f0ae;
+  color: #8bc34a;
 }
 a:active,
 a:hover {
@@ -205,7 +205,7 @@ button {
 }
 @supports (backdrop-filter: blur(20px)) {
   .blur {
-    background: rgba(232,245,233,0.9) !important;
+    background: rgba(255,249,196,0.9) !important;
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
@@ -585,7 +585,7 @@ button {
   padding-left: 36px;
   border-radius: 1.4rem;
   -webkit-border-radius: 1.4rem;
-  background: rgba(232,245,233,0.6);
+  background: rgba(255,249,196,0.6);
   backdrop-filter: blur(10px);
   border: none;
   color: var(--color-text);
@@ -596,10 +596,10 @@ button {
   }
 }
 .cover-wrapper .cover-body .m_search .input:hover {
-  background: rgba(232,245,233,0.8);
+  background: rgba(255,249,196,0.8);
 }
 .cover-wrapper .cover-body .m_search .input:focus {
-  background: #e8f5e9;
+  background: #fff9c4;
 }
 .cover-wrapper .list-h {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
@@ -767,7 +767,7 @@ button {
 .cover-wrapper.dock .menu .list-h a.active i+p,
 .cover-wrapper.featured .menu .list-h a.active i+p,
 .cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #c8e6c9;
+  color: #ffd54f;
 }
 .cover-wrapper.dock .menu .list-h a.active img+p,
 .cover-wrapper.featured .menu .list-h a.active img+p,
@@ -783,7 +783,7 @@ button {
   margin-bottom: 48px;
 }
 .cover-wrapper.dock .menu {
-  background: rgba(232,245,233,0.5);
+  background: rgba(255,249,196,0.5);
   position: absolute;
   bottom: 0;
   max-width: 100%;
@@ -812,18 +812,18 @@ button {
     background: transparent;
   }
   .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #c8e6c9;
+    background: #ffd54f;
     cursor: pointer;
     border-radius: 0;
     -webkit-border-radius: 0;
   }
   .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
-    background: #69f0ae;
+    background: #8bc34a;
   }
 }
 @supports (backdrop-filter: blur(20px)) {
   .cover-wrapper.dock .menu {
-    background: rgba(232,245,233,0.5);
+    background: rgba(255,249,196,0.5);
     backdrop-filter: saturate(200%) blur(20px);
   }
 }
@@ -851,7 +851,7 @@ button {
     --color-h6: rgba(255,255,255,0.6);
     --color-p: rgba(217,217,217,0.871);
     --color-list: rgba(217,217,217,0.871);
-    --color-list-hl: #d3ebd3;
+    --color-list-hl: #ffdd72;
     --color-meta: rgba(191,191,191,0.871);
     --color-link: rgba(191,191,191,0.871);
     --color-copyright-bkg: #21252b;
@@ -923,7 +923,7 @@ button {
   --color-h6: rgba(255,255,255,0.6);
   --color-p: rgba(217,217,217,0.871);
   --color-list: rgba(217,217,217,0.871);
-  --color-list-hl: #d3ebd3;
+  --color-list-hl: #ffdd72;
   --color-meta: rgba(191,191,191,0.871);
   --color-link: rgba(191,191,191,0.871);
   --color-copyright-bkg: #21252b;
@@ -1192,7 +1192,7 @@ button {
   -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
   -ms-transition: all 0.28s ease;
-  color: #c8e6c9;
+  color: #ffd54f;
 }
 .l_header .switcher >li >a:hover {
   border: none;
@@ -1304,7 +1304,7 @@ button {
   line-height: 1.3;
   width: 100%;
   color: var(--color-text);
-  background: #e1f2e2;
+  background: #fff8ba;
   box-shadow: none;
   -webkit-box-shadow: none;
   box-sizing: border-box;
@@ -1345,7 +1345,7 @@ button {
     width: 0;
     overflow: hidden;
     position: absolute;
-    background: #fafdfa;
+    background: #fffcdd;
     transition: all 0.28s ease;
     -webkit-transition: all 0.28s ease;
     -khtml-transition: all 0.28s ease;
@@ -1372,7 +1372,7 @@ ul.m-pc >li>a {
 }
 ul.m-pc >li>a:active,
 ul.m-pc >li>a.active {
-  border-bottom: 2px solid #c8e6c9;
+  border-bottom: 2px solid #ffd54f;
 }
 ul.m-pc li:hover >ul.list-v,
 ul.list-v li:hover >ul.list-v {
@@ -1511,7 +1511,7 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li >a:active,
 .l_header ul.nav-list-h>li >a.active {
-  color: #c8e6c9;
+  color: #ffd54f;
 }
 .l_header ul.nav-list-h>li:hover>a {
   color: var(--color-list-hl);
@@ -1903,7 +1903,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1698248826721),
+    lastupdate: new Date(1698294213323),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2622,7 +2622,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="full" class='cover-wrapper  dock' style="display: ;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://picst.sunbangyan.cn/2023/10/25/6f9fb5ba0085896dfb4778a2d6501046.png"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="https://picst.sunbangyan.cn/2023/10/26/9a30672dfdf8d0805ce961c0171a8461.jpg"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2645,35 +2645,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>主世界</p>
+              <img src='https://picst.sunbangyan.cn/2023/10/26/234c47d98ae2a9d8d97f6369c26d020e.png'><p>主世界</p>
             </a>
           
             <a href="/tags/"
               
               
               active-action="action-tags">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f516.svg'><p>标签</p>
+              <img src='https://picdm.sunbangyan.cn/2023/10/26/1ebb5eca5974bc6d39e9592407053f86.png'><p>标签</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>归档</p>
+              <img src='https://picst.sunbangyan.cn/2023/10/26/5d7971951c984b68b6abdbc5a6b25dfd.png'><p>归档</p>
             </a>
           
             <a href="/contributors/"
               
               
               active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
+              <img src='https://picss.sunbangyan.cn/2023/10/26/2802c2a8a5ba892b8ed36452e361e6fc.png'><p>社区</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
               
               
               active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
+              <img src='https://picdm.sunbangyan.cn/2023/10/26/3be9ffeffd57aa27a9fd9961616650a6.png'><p>源码</p>
             </a>
           
         
