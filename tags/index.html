@@ -1905,9 +1905,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1698294368319),
+    lastupdate: new Date(1698313340578),
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -1915,7 +1915,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           friendlyShow: true
         },
         runtime: {
-          data: "2020/01/01",
+          data: "2022/12/04",
           unit: "天"
         }
       }
@@ -2643,10 +2643,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='list-h'>
         
           
-            <a href="/v4/getting-started/"
+            <a href="/"
               
               
-              active-action="action-v4getting-started">
+              active-action="action-home">
               <img src='https://picst.sunbangyan.cn/2023/10/26/234c47d98ae2a9d8d97f6369c26d020e.png'><p>主世界</p>
             </a>
           
@@ -2664,11 +2664,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <img src='https://picst.sunbangyan.cn/2023/10/26/5d7971951c984b68b6abdbc5a6b25dfd.png'><p>归档</p>
             </a>
           
-            <a href="/contributors/"
+            <a href="/about"
               
               
-              active-action="action-contributors">
-              <img src='https://picss.sunbangyan.cn/2023/10/26/2802c2a8a5ba892b8ed36452e361e6fc.png'><p>社区</p>
+              active-action="action-about">
+              <img src='https://picss.sunbangyan.cn/2023/10/26/2802c2a8a5ba892b8ed36452e361e6fc.png'><p>介绍</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
@@ -2702,7 +2702,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <h2>所有标签</h2>
           <div class="all-tags">
             
-            
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%87%E7%AD%BE/" rel="tag">标签</a><span class="tag-list-count">1</span></li></ul>
           </div>
           <br>
           
@@ -2738,6 +2738,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2826,15 +2830,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <br>
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          
-            
-              <a href="/atom.xml"
-                class="social fas fa-rss flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-              </a>
-            
           
             
               <a href="/2141177681@qq.com"
@@ -3525,9 +3520,9 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
     <!-- Custom Files bodyEnd end-->
     <!-- front-matter body_end begin -->
-	#鼠标拖尾效果
+	
 	<script src="https://gcore.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_slide.js"></script>
-	#鼠标点击效果
+	
 	<script src="https://gcore.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_click.js"></script>
     <!-- front-matter body_end end -->
   </body>
