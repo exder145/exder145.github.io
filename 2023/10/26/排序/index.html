@@ -41,11 +41,11 @@
 <meta property="og:title" content="数据结构与算法--排序">
 <meta property="og:url" content="http://example.com/2023/10/26/%E6%8E%92%E5%BA%8F/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.0基本概念​		有n个记录的序列&amp;#123;R1，R2，…，Rn&amp;#125;，其相应关键字的序列是&amp;#123;K1，K2， …，Kn &amp;#125;，相应的下标序列为1，2，…，n。 通过排序，要求找出当前下标序列1，2，…， n的一种排列p1，p2， …，pn，使得相应关键字满足如下的非递减（或非递增）关系，即：Kp1≤ Kp2≤…≤ Kpn ，这样就得到一个按关键字有序的记录序列：&amp;#123">
+<meta property="og:description" content="1.0基本概念​		有n个记录的序列&amp;#123;R1，R2，…，Rn}，其相应关键字的序列是{K1，K2， …，Kn }，相应的下标序列为1，2，…，n&#96;。 通过排序，要求找出当前下标序列1，2，…， n的一种排列p1，p2， …，pn，使得相应关键字满足如下的非递减（或非递增）关系，即：Kp1≤ Kp2≤…≤ Kpn ，这样就得到一个按关键字有序的记录序列：&amp;#123;Rp1，Rp2，">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-10-26T15:33:47.521Z">
-<meta property="article:modified_time" content="2023-10-31T14:51:01.991Z">
+<meta property="article:modified_time" content="2023-11-12T07:56:49.451Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -1908,7 +1908,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1698768013226),
+    lastupdate: new Date(1699783434338),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2776,7 +2776,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="1-0基本概念"><a href="#1-0基本概念" class="headerlink" title="1.0基本概念"></a>1.0基本概念</h1><p>​		有n个记录的序列<code>&#123;R1，R2，…，Rn&#125;</code>，其相应关键字的序列是<code>&#123;K1，K2， …，Kn &#125;</code>，相应的下标序列为<code>1，2，…，n</code>。</p>
+    <h1 id="1-0基本概念"><a href="#1-0基本概念" class="headerlink" title="1.0基本概念"></a>1.0基本概念</h1><p>​		有n个记录的序列<code>&#123;R1，R2</code>，…，Rn}<code>，其相应关键字的序列是</code>{K1，K2， …，Kn }<code>，相应的下标序列为</code>1，2，…，n&#96;。</p>
 <p>通过排序，要求找出当前下标序列<code>1，2，…， n</code>的一种排列<code>p1，p2， …，pn</code>，使得相应关键字满足如下的<strong>非递减（或非递增）</strong>关系，即：<code>Kp1≤ Kp2≤…≤ Kpn</code> ，这样就得到一个按关键字有序的记录序列：<code>&#123;Rp1，Rp2， …， Rpn&#125;</code>。</p>
 <p>（1）<strong>数据表</strong></p>
 <p>待排序数组元素的有限集合。</p>
@@ -2901,10 +2901,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-31T22:51:01+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-11-12T15:56:49+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Oct 31, 2023</p>
+    <p>更新于：Nov 12, 2023</p>
   </a>
 </div>
 
@@ -2984,9 +2984,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/10/31/%E5%90%84%E7%A7%8D%E5%AD%98%E6%A1%A3/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>还没整理的</p>
-          <p class='content'>c++优先队列(priority_queue)用法详解转自csdn的文章，仅作为学习笔记。原文链接：https://blog.csdn.net/weixin_36888577/article/d...</p>
+        <a class='prev' href='/2023/11/12/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E6%95%B4%E7%90%86/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>学习网站整理</p>
+          <p class='content'>
+给一些课程学习所需要的网站整理一下(虽然也不一定全会看但当时觉得有用就保存下来了的一些东西)以便自己查询  日后会不断补充
+
+数字电路一个中科大编写的课程学习网站: Digital Lab 2...</p>
         </a>
       
       
@@ -3753,7 +3756,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/数据结构与算法/","name":"数据结构与算法"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/10/26/排序/","name":"数据结构与算法--排序"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"数据结构与算法--排序","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/10/26/%E6%8E%92%E5%BA%8F/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/10/26/%E6%8E%92%E5%BA%8F/","wordCount":0,"datePublished":"2023-10-26T15:33:47.521Z","dateModified":"2023-10-31T14:51:01.991Z","articleSection":"数据结构与算法","keywords":"算法","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/数据结构与算法/","name":"数据结构与算法"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/10/26/排序/","name":"数据结构与算法--排序"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"数据结构与算法--排序","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/10/26/%E6%8E%92%E5%BA%8F/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/10/26/%E6%8E%92%E5%BA%8F/","wordCount":0,"datePublished":"2023-10-26T15:33:47.521Z","dateModified":"2023-11-12T07:56:49.451Z","articleSection":"数据结构与算法","keywords":"算法","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
